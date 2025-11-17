@@ -5,7 +5,7 @@ import { menuData, contactData, socialData, workingHours } from '../../Data';
 
 import TitleComponent from '../titleComponent/titleComponent';
 
-import brandLogo from '../../assets/brand-logo.webp';
+import brandLogo from '../../assets/brand-logo.svg';
 
 const Footer = () => {
     const location = useLocation();
@@ -13,14 +13,14 @@ const Footer = () => {
     return (
         <>
             <footer className={clsx(
-                "md:py-12 py-7 bg-primaryLight",
+                "lg:py-28 md:py-24 py-14 bg-primaryLight",
                 location.pathname === "/service" ? "mt-10" : ""
             )}>
                 <div className="container">
                     <div className="grid lg:grid-cols-[1fr_0.5fr_1fr_1fr] sm:grid-cols-[1fr_1fr] gap-6 items-start">
                         <div>
                             <Link to="/" className="flex">
-                                <img className='w-20 md:w-28 h-auto' src={brandLogo} alt="brand logo" />
+                                <img className='xl:w-48 w-32 h-auto' src={brandLogo} alt="brand logo" />
                             </Link>
                             <TitleComponent size="base" className="xl:mt-6 mt-5 mb-4 text-black">Lorem ipsum amet, consectetur adipiscing elit. Suspendis varius enim eros elementum tristique. Duis cursus.</TitleComponent>
                             <Link to="mailto:leospa@email.com" className="text-primary underline lg:text-lg text-base font-medium">support.leospa@email.com</Link>

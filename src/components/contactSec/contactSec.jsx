@@ -13,20 +13,19 @@ const ContactSec = () => {
 
     return (
         <>
-            <section className="py-12">
+            <section className="lg:py-32 md:py-24 py-14">
                 <div className="container">
                     <div>
-                        <SectionTitle
-                            subtitle="Contact Us" subtitleClass="contact_subtitle"
-                            title="Get in" titleClass="contact_title"
-                            headingLevel='h2' highlightedText="Touch"
-                            sectionStyle="text-center max-w-[800px] mx-auto md:mb-12 mb-8"
-                        >
-                            <TitleComponent size='base' className='contact_desc mt-5 text-textColor'>To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</TitleComponent>
-                        </SectionTitle>
                         <div className="flex lg:flex-row flex-col lg:gap-20 gap-5 mx-auto">
-                            <div className="lg:w-1/3">
-                                <ul className='flex flex-col lg:gap-6 gap-4'>
+                            <div className="lg:w-1/2">
+                                <SectionTitle
+                                    subtitle="Contact Us" subtitleClass="contact_subtitle"
+                                    title="Get in" titleClass="contact_title"
+                                    headingLevel='h2' highlightedText="Touch"
+                                >
+                                    <TitleComponent size='base' className='contact_desc mt-5 text-textColor'>To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</TitleComponent>
+                                </SectionTitle>
+                                <ul className='md:mt-12 mt-8 flex flex-col lg:gap-6 gap-4'>
                                     {contactData.map((item, index) => (
                                         <li key={index}>
                                             <Link to={item.path} className='grid grid-cols-[auto_1fr] items-center gap-x-4 group'>

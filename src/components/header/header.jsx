@@ -1,24 +1,47 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import { Link, useLocation } from 'react-router-dom';
 import { List } from 'phosphor-react';
 import { menuData } from '../../Data';
 
-import brandLogo from '../../assets/brand-logo.webp';
+import brandLogo from '../../assets/brand-logo.svg';
 
 const Header = () => {
-
     const location = useLocation();
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 100) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const textColor = (item) => {
         if (location.pathname === item.to) {
-            return 'text-primary'
-        } else if (location.pathname === '/') {
+            return 'text-primary font-semibold'
+        } else if (location.pathname === '/' && !isScrolled) {
             return 'text-white hover:text-primary'
         }
         else {
             return 'text-black hover:text-primary'
         }
+    }
+
+    const mobileIconColor = () => {
+        if (location.pathname === '/' && !isScrolled) {
+            return 'text-white';
+        }
+        return 'text-black';
     }
 
     return (
@@ -37,21 +60,44 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <header className={clsx("header", "absolute top-10 left-0 w-full h-auto z-50")}>
+            <header className={clsx(
+                "header z-50 duration-300",
+                isScrolled
+                    ? "fixed top-0 left-0 w-full bg-white shadow-md"
+                    : "absolute top-10 left-0 w-full"
+            )}>
                 <div className="container">
-                    <div className="flex lg:items-end items-center justify-between py-2">
-                        <Link to='/'>
-                            <img className='lg:w-28 w-20 h-auto' src={brandLogo} alt="Brand LOGO" />
+                    <div className="flex items-center justify-between py-4">
+                        <Link to='/' className="relative z-10">
+                            <img
+                                className='xl:w-48 w-32 h-auto'
+                                src={brandLogo}
+                                alt="Brand LOGO"
+                            />
                         </Link>
                         <ul className='hidden lg:flex items-center gap-10'>
                             {menuData.map((item, index) => (
                                 <li key={index}>
-                                    <Link className={clsx("lg:text-base text-sm uppercase", textColor(item), "duration-300")} to={item.to}>{item.text}</Link>
+                                    <Link
+                                        className={clsx(
+                                            "relative lg:text-base text-sm uppercase duration-300",
+                                            "after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300",
+                                            textColor(item),
+                                            location.pathname === item.to ? "after:w-full" : "hover:after:w-full"
+                                        )}
+                                        to={item.to}
+                                    >
+                                        {item.text}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
                         <div className='flex lg:hidden'>
-                            <List size={24} weight='bold' className={clsx(location.pathname === "/" ? "text-white" : "text-black", "duration-300 hover:text-primary")} />
+                            <List
+                                size={24}
+                                weight='bold'
+                                className={clsx(mobileIconColor(), "duration-300 hover:text-primary")}
+                            />
                         </div>
                     </div>
                 </div>

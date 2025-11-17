@@ -8,7 +8,7 @@ import SectionTitle from '../sectionTitle/sectionTitle';
 
 const AboutSec = () => {
     return (
-        <section className='relative lg:py-24 py-14'>
+        <section className='relative lg:py-32 md:py-24 py-14'>
             <div className="container">
                 <SectionTitle
                     subtitle="About Our SPA Center" subtitleClass="about_subtitle"

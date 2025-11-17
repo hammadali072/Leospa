@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { Link } from 'react-router-dom';
 import { popularCollectionData } from '../../Data';
 
-import TitleComponent from '../TitleComponent/TitleComponent';
+import TitleComponent from '../titleComponent/titleComponent';
 
 const PopularCollection = () => {
     const [bgColor, setBgColor] = useState('');
@@ -12,7 +12,7 @@ const PopularCollection = () => {
         setBgColor(color);
     }
     return (
-        <section className={clsx("g:pt-20 lg:pb-[88px] py-16", bgColor)}>
+        <section className={clsx("lg:pt-20 lg:pb-[88px] py-16", bgColor)}>
             <div className="container">
                 <div className='text-center'>
                     <TitleComponent size='small' className='collection_title_prefix mb-4 text-black'>Popular Collection</TitleComponent>

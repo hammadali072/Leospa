@@ -8,7 +8,7 @@ import BeautyProduct from './beautyProduct';
 
 const NewBeautyProducts = () => {
     return (
-        <section className='mt-14 mb-12'>
+        <section className='pt-14 pb-12'>
             <div className="container-fluid">
                 <SectionTitle
                     subtitle="Latest Arrivals" subtitleClass="beauty_subtitle"

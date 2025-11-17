@@ -7,7 +7,7 @@ import TeamCart from "./teamCart"
 
 const TeamSec = () => {
     return (
-        <div className='py-12'>
+        <div className='lg:py-32 md:py-24 py-14'>
             <div className="container">
                 <SectionTitle
                     subtitle="Meet Our Experts" subtitleClass="team_subtitle"
