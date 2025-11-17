@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-pagination-bullet {
+    background-color: #ff817e !important;
+}
+
+.swiper-scrollbar-horizontal {
+    background-color: hsla(1,100%,75%,0.1) !important;
+}
+
+.swiper-scrollbar-drag {
+    background-color: #ff817e !important;
+}
