@@ -1,6 +1,6 @@
 import React from "react";
 import clsx from "clsx";
-import ThemeButton from "../ThemeButton/ThemeButton";
+import ThemeButton from "../themeButton/themeButton";
 
 const ThemeInput = ({
     type = "email",

@@ -17,6 +17,7 @@ export default {
         textColor: '#555',
         textColor2: '#151515',
         primary: '#ff817e',
+        primaryLight: '#fff9f8',
         lightPink100: 'hsla(1,100%,75%,0.8)',
         transparent: 'transparent',
         white: '#ffffff',

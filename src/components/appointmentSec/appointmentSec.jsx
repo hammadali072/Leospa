@@ -1,64 +1,61 @@
 import React from 'react';
+import SectionTitle from '../sectionTitle/sectionTitle';
+import TitleComponent from '../titleComponent/titleComponent';
+import ThemeButton from '../themeButton/themeButton';
+import FormInput2 from '../formInput/formInput2';
 
 import ContactImage from '../../assets/cta-img.webp';
 
 const AppointmentSec = () => {
     return (
-        <div className="relative flex items-center bg-primaryLight md:mb-12 xl:py-12">
+        <div className="relative flex items-center bg-primaryLight md:mb-12">
             <div className="absolute top-1/2 left-0 transform -translate-y-1/2 lg:w-2/5 h-full overflow-hidden lg:block hidden">
-                <img className='w-full h-auto object-cover' src={ContactImage} alt="contact image" />
+                <img className='w-full h-full object-cover' src={ContactImage} alt="contact image" />
             </div>
             <div className="container">
-                <div className="lg:flex lg:justify-end lg:pl-[100px] lg:py-12 py-6">
-                    <form action="" className='grid grid-cols-2 gap-x-3 gap-y-6 lg:w-3/5'>
-                        <input
-                            className='py-2.5 px-2 border-b border-[#d4d3d3] bg-transparent lg:text-base text-sm text-[#999999] w-full placeholder:text-[#999999] focus:outline-none'
-                            type="text"
-                            name="firstName"
-                            placeholder="Name"
-                            required
-                        />
-                        <input
-                            className='py-2.5 px-2 border-b border-[#d4d3d3] bg-transparent lg:text-base text-sm text-[#999999] w-full placeholder:text-[#999999] focus:outline-none'
-                            type="email"
-                            name="email"
-                            placeholder="Email address"
-                            required
-                        />
-                        <select
-                            className='py-2.5 px-2 border-b border-[#d4d3d3] bg-transparent lg:text-base text-sm text-[#999999] w-full placeholder:text-[#999999] focus:outline-none'
-                            name="service"
+                <div className="lg:flex lg:justify-end xl:pl-[100px] lg:pl-16 xl:py-32 md:py-24 py-14">
+                    <div className='lg:w-3/5'>
+                        <SectionTitle
+                            subtitle="Book Your Session" subtitleClass="contact_subtitle"
+                            title="Make an" titleClass="contact_title"
+                            headingLevel='h2' highlightedText="Appointment"
+                            sectionStyle="mb-8"
                         >
-                            <option value="">Select service</option>
-                            <option value="Service 1">Service 1</option>
-                            <option value="Service 2">Service 2</option>
-                            <option value="Service 3">Service 3</option>
-                        </select>
-                        <input
-                            className='py-2.5 px-2 border-b border-[#d4d3d3] bg-transparent lg:text-base text-sm text-[#999999] w-full placeholder:text-[#999999] focus:outline-none'
-                            type="tel"
-                            name="phone"
-                            placeholder="Phone number"
-                        />
-                        <input
-                            className='py-2.5 px-2 border-b border-[#d4d3d3] bg-transparent lg:text-base text-sm text-[#999999] w-full placeholder:text-[#999999] focus:outline-none'
-                            type="date"
-                            name="date"
-                        />
-                        <input
-                            className='py-2.5 px-2 border-b border-[#d4d3d3] bg-transparent lg:text-base text-sm text-[#999999] w-full placeholder:text-[#999999] focus:outline-none'
-                            type="time"
-                            name="time"
-                        />
-                        <textarea
-                            className='py-2.5 px-2 border-b border-[#d4d3d3] bg-transparent lg:text-base text-sm text-[#999999] w-full col-span-2 placeholder:text-[#999999] focus:outline-none'
-                            name="notes"
-                            placeholder="Your notes"
-                        />
-                        <button type="submit" className="px-6 py-3 rounded-full lg:text-base text-sm font-medium transition duration-300 w-fit bg-primary border-2 border-transparent text-white hover:bg-transparent hover:border-primary hover:text-primary">
-                            Make an Appointment
-                        </button>
-                    </form>
+                            <TitleComponent size='base' className='contact_desc mt-5 text-textColor'>Schedule your relaxation session with our expert therapists</TitleComponent>
+                        </SectionTitle>
+
+                        <form action="" className='flex flex-col lg:gap-6 gap-3.5'>
+                            <div className='flex sm:flex-row flex-col lg:gap-6 gap-3.5'>
+                                <FormInput2 type='text' name='name' placeholder='Name' />
+                                <FormInput2 type='email' name='email' placeholder='Email Address' />
+                            </div>
+                            <div className='flex sm:flex-row flex-col lg:gap-6 gap-3.5'>
+                                <select
+                                    className='py-3 px-4 border border-grey100 rounded-md bg-white lg:text-base text-sm text-black w-full focus:outline-none focus:border-primary transition-colors duration-300'
+                                    name="service"
+                                >
+                                    <option value="">Select service</option>
+                                    <option value="Service 1">Swedish Massage</option>
+                                    <option value="Service 2">Deep Tissue Massage</option>
+                                    <option value="Service 3">Hot Stone Therapy</option>
+                                </select>
+                                <FormInput2 type='tel' name='phone' placeholder='Phone Number' />
+                            </div>
+                            <div className='flex sm:flex-row flex-col lg:gap-6 gap-3.5'>
+                                <FormInput2 type='date' name='date' placeholder='mm/dd/yyyy' />
+                                <FormInput2 type='time' name='time' placeholder='--:-- --' />
+                            </div>
+                            <textarea
+                                className='py-3 px-4 border border-grey100 rounded-md bg-white lg:text-base text-sm text-black w-full col-span-2 placeholder:text-greyDark focus:outline-none focus:border-primary transition-colors duration-300 resize-none'
+                                name="notes"
+                                rows="4"
+                                placeholder="Your notes"
+                            />
+                            <div className="col-span-2">
+                                <ThemeButton variant='primary' type="submit">Make an Appointment</ThemeButton>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

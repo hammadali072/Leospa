@@ -16,7 +16,7 @@ const ProcedureSec = () => {
                 >
                     <TitleComponent size='base' className='procedure_desc text-grey8 mt-5 lg:mb-14 mb-10'>To doesn't his appear replenish together called he of mad place won't wherein blessed second every wherein were meat kind wherein and martcin</TitleComponent>
                 </SectionTitle>
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-6">
                     {procedureData.map((data, index) => (
                         <ProcedureCard data={data} key={index} />
                     ))}

@@ -7,29 +7,41 @@ import TitleComponent from '../titleComponent/titleComponent';
 
 const BlogCard = ({ data }) => {
     return (
-        <div className='border border-grey100 lg:p-5 p-3.5 duration-300 rounded-lg overflow-hidden hover:shadow-shadow1 group'>
-            <Link className='flex rounded-lg overflow-hidden' to='/'>
-                <img className='w-full aspect-[4/3] h-auto object-cover duration-300 group-hover:scale-110' src={data.image} alt="Post img" />
+        <div className='relative rounded-2xl overflow-hidden group bg-white shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2'>
+            <Link to='/' className='relative block overflow-hidden before:absolute before:w-[150%] before:h-[150%] before:z-10 before:inset-0 before:-rotate-45 before:bg-gradient-to-t before:from-primary/50 before:to-transparent before:scale-x-0 before:duration-500 group-hover:before:scale-x-100'>
+                <img
+                    className='w-full h-auto aspect-[16/10] object-cover duration-700 group-hover:scale-110'
+                    src={data.image}
+                    alt={data.heading + data.description}
+                />
             </Link>
-            <div className='pt-5'>
-                <ul className="flex items-center gap-10">
+
+            <div className='p-6'>
+                <ul className="flex items-center gap-6 mb-4">
                     <li className="flex items-center gap-2">
                         <div className="flex justify-center items-center">
-                            <User className='text-primary' size={20} weight='bold' />
+                            <User className='text-primary' size={18} weight='bold' />
                         </div>
-                        <Link to="#" className="text-textColor md:text-base text-sm font-medium duration-300 hover:text-primary">{data.user}</Link>
+                        <Link to="#" className="text-textColor text-sm font-medium duration-300 hover:text-primary">{data.user}</Link>
                     </li>
                     <li className="flex items-center gap-2">
                         <div className="flex justify-center items-center">
-                            <CalendarCheck className='text-primary' size={20} weight='bold' />
+                            <CalendarCheck className='text-primary' size={18} weight='bold' />
                         </div>
-                        <TitleComponent size='small-medium' className="text-textColor md:text-base">{data.datePosted}</TitleComponent>
+                        <TitleComponent size='small-medium' className="text-textColor text-sm">{data.datePosted}</TitleComponent>
                     </li>
                 </ul>
-                <Link className='my-5 text-black md:text-2xl text-xl leading-[120%] font-Merriwheather font-bold tracking-[0.5px] duration-300 hover:text-primary' to='/'>{data.heading}</Link>
-                <TitleComponent size='base' className='text-textColor mb-5'>{data.description}</TitleComponent>
-                <ThemeButton variant='underline'>Read More</ThemeButton>
+
+                <Link to='/' className='mb-4 md:text-2xl sm:text-xl text-lg leading-[120%] font-Merriwheather tracking-[0.5px] text-black line-clamp-2 duration-300 group-hover:text-primary'>{data.heading}</Link>
+
+                <TitleComponent size='base' className='text-textColor leading-relaxed mb-6 line-clamp-3'>{data.description}</TitleComponent>
+
+                <div className="pt-4 border-t border-gray-100">
+                    <ThemeButton variant='underline'>Read More</ThemeButton>
+                </div>
             </div>
+
+            <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary/20 rounded-2xl transition-all duration-500 pointer-events-none"></div>
         </div>
     )
 }

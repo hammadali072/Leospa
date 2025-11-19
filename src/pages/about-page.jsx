@@ -1,5 +1,5 @@
 import HeroSec2 from '../components/heroSec/heroSec2'
-import AboutSec from '../components/aboutSec/aboutSec'
+import AboutSec2 from '../components/aboutSec/aboutSec2'
 import EmpowerSkinSec from '../components/empowerSkinSec/empowerSkinSec'
 import NewsletterSec from '../components/newsletterSec/newsletterSec'
 import ServiceSec from '../components/serviceSec/serviceSec'
@@ -15,7 +15,7 @@ const AboutPage = () => {
                 Link="/about"
                 pageText="About Us"
             />
-            <AboutSec />
+            <AboutSec2 />
             <ServiceSec />
             <EmpowerSkinSec />
             <SkinProductSec />

@@ -29,8 +29,8 @@ const ContactSec = () => {
                                     {contactData.map((item, index) => (
                                         <li key={index}>
                                             <Link to={item.path} className='grid grid-cols-[auto_1fr] items-center gap-x-4 group'>
-                                                <div className='flex justify-center items-center size-14 rounded-md bg-primary'>
-                                                    <item.icon className='text-white' size={24} weight='fill' />
+                                                <div className='flex justify-center items-center size-14 rounded-lg bg-primaryLight duration-300 group-hover:bg-primary'>
+                                                    <item.icon className='text-primary duration-300 group-hover:text-primaryLight' size={26} weight='fill' />
                                                 </div>
                                                 <div className='flex flex-col xl:gap-0.5 gap-1.5'>
                                                     <TitleComponent size='base-medium' className='text-grey8/80'>{item.label}</TitleComponent>

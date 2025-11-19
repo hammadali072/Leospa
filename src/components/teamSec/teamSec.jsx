@@ -4,7 +4,6 @@ import TitleComponent from "../titleComponent/titleComponent"
 import SectionTitle from '../sectionTitle/sectionTitle'
 import TeamCart from "./teamCart"
 
-
 const TeamSec = () => {
     return (
         <div className='lg:py-32 md:py-24 py-14'>
