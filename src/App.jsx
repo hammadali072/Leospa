@@ -1,12 +1,12 @@
-import { useEffect } from "react"
-import { Route, Routes, useLocation } from "react-router-dom"
-import Header from "./components/header/header"
-import Footer from "./components/footer/footer"
-import HomePage from "./pages/home-page"
-import AboutPage from "./pages/about-page"
-import ServicePage from "./pages/service-page"
-import BlogPage from "./pages/blog-page"
-import ContactPage from "./pages/contact-page"
+import { useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
+import HomePage from "./pages/home-page";
+import AboutPage from "./pages/about-page";
+import ServicePage from "./pages/service-page";
+import BlogPage from "./pages/blog-page";
+import ContactPage from "./pages/contact-page";
 
 function App() {
   const location = useLocation();

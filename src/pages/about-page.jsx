@@ -1,11 +1,11 @@
-import HeroSec2 from '../components/heroSec/heroSec2'
-import AboutSec2 from '../components/aboutSec/aboutSec2'
-import EmpowerSkinSec from '../components/empowerSkinSec/empowerSkinSec'
-import NewsletterSec from '../components/newsletterSec/newsletterSec'
-import ServiceSec from '../components/serviceSec/serviceSec'
-import SkinProductSec from '../components/skinCareProductsSec/skinProductSec'
-import TeamSec from '../components/teamSec/teamSec'
-import TestimonialSec from '../components/testimonialSec/testimonialSec'
+import HeroSec2 from '../components/heroSec/heroSec2';
+import AboutSec2 from '../components/aboutSec/aboutSec2';
+import ServiceSec from '../components/serviceSec/serviceSec';
+import EmpowerSkinSec from '../components/empowerSkinSec/empowerSkinSec';
+import SkinProductSec from '../components/skinCareProductsSec/skinProductSec';
+import TestimonialSec from '../components/testimonialSec/testimonialSec';
+import TeamSec from '../components/teamSec/teamSec';
+import NewsletterSec from '../components/newsletterSec/newsletterSec';
 
 const AboutPage = () => {
     return (

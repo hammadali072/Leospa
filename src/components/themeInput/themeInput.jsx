@@ -1,4 +1,3 @@
-import React from "react";
 import clsx from "clsx";
 import ThemeButton from "../themeButton/themeButton";
 
@@ -14,7 +13,7 @@ const ThemeInput = ({
     return (
         <div className={clsx("relative", className)}>
             <input
-                className="w-full sm:h-16 h-auto border border-solid border-grey-100 outline-none bg-white sm:rounded-full rounded-2xl py-3.5 pl-5 pr-5 sm:pr-32 text-base leading-normal text-black2 font-light"
+                className="w-full sm:h-16 h-auto border border-solid border-grey-100 outline-none bg-white rounded-full py-3.5 pl-5 pr-5 sm:pr-32 text-base leading-normal text-black2 font-light"
                 type={type}
                 name={name}
                 id={id}

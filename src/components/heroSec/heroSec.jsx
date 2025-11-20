@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { Play } from 'phosphor-react';
 
 import TitleComponent from '../titleComponent/titleComponent';
-import ThemeButton from '../themeButton/themeButton'
+import ThemeButton from '../themeButton/themeButton';
 
-import heroVideo from '../../assets/heroVideo.mp4'
+import heroVideo from '../../assets/heroVideo.mp4';
 
 const HeroSec = () => {
     return (

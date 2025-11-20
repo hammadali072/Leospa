@@ -1,5 +1,5 @@
-import BlogSec from '../components/blogSec/blogSec'
-import HeroSec2 from '../components/heroSec/heroSec2'
+import BlogSec from '../components/blogSec/blogSec';
+import HeroSec2 from '../components/heroSec/heroSec2';
 
 const BlogPage = () => {
     return (

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import { testimonialData } from '../../Data';
@@ -22,9 +21,9 @@ const TestimonialSec = () => {
                     {testimonialData.map((item, index) => (
                         <SwiperSlide key={index} className="slide pb-10 text-center">
                             <img className="quote_img mt-0 mx-auto sm:w-16 w-12" src={quote} alt="" />
-                            <TitleComponent size='base' className="review_desc md:my-11 my-7 mx-auto max-w-[900px] text-black2 sm:text-base">{item.desc}</TitleComponent>
+                            <TitleComponent size='small' className="review_desc md:my-11 my-7 mx-auto max-w-[900px] text-black2 sm:text-base">{item.desc}</TitleComponent>
                             <div className='flex flex-col items-center gap-5'>
-                                <img className="profile_img md:w-20 md:h-20 w-16 h-16 rounded-full" src={item.img} alt="" />
+                                <img className="profile_img md:w-20 md:h-20 w-16 h-16 object-cover rounded-full" src={item.img} alt="" />
                                 <TitleComponent type='h4' className="user_name text-black2">{item.name}, <span className="text-base tracking-[0.5px] font-medium">{item.designation}</span> </TitleComponent>
                             </div>
                         </SwiperSlide>

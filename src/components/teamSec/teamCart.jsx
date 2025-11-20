@@ -1,4 +1,3 @@
-import React from 'react';
 import TitleComponent from '../titleComponent/titleComponent';
 
 const TeamCart = ({ data }) => {

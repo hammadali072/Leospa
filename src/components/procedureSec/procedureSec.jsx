@@ -1,8 +1,7 @@
-import React from 'react'
-import TitleComponent from '../titleComponent/titleComponent'
-import SectionTitle from '../sectionTitle/sectionTitle'
-import ProcedureCard from './procedureCard'
-import { procedureData } from '../../Data'
+import TitleComponent from '../titleComponent/titleComponent';
+import SectionTitle from '../sectionTitle/sectionTitle';
+import ProcedureCard from './procedureCard';
+import { procedureData } from '../../Data';
 
 const ProcedureSec = () => {
     return (

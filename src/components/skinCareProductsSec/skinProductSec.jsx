@@ -1,9 +1,8 @@
-import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import { skinProductsData } from '../../Data'
+import { skinProductsData } from '../../Data';
 
-import SkinCareProduct from './skinCareProduct'
+import SkinCareProduct from './skinCareProduct';
 
 const SkinProductSec = () => {
     return (

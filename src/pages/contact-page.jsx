@@ -1,5 +1,5 @@
-import HeroSec2 from '../components/heroSec/heroSec2'
-import ContactSec from '../components/contactSec/contactSec'
+import HeroSec2 from '../components/heroSec/heroSec2';
+import ContactSec from '../components/contactSec/contactSec';
 
 const ContactPage = () => {
     return (

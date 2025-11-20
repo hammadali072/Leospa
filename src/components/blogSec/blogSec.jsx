@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { blogData } from "../../Data"
 import TitleComponent from "../titleComponent/titleComponent"
 import SectionTitle from '../sectionTitle/sectionTitle'

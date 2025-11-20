@@ -1,7 +1,7 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import clsx from 'clsx';
 
-import { useSwiperSlide } from 'swiper/react'
+import { useSwiperSlide } from 'swiper/react';
 
 const BestProductSlide = ({ item }) => {
     const swiperSlide = useSwiperSlide();

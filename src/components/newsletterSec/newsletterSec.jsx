@@ -1,8 +1,6 @@
-import React from 'react'
-
-import TitleComponent from '../titleComponent/titleComponent'
-import SectionTitle from '../sectionTitle/sectionTitle'
-import ThemeInput from '../themeInput/themeInput'
+import ThemeInput from '../themeInput/themeInput';
+import SectionTitle from '../sectionTitle/sectionTitle';
+import TitleComponent from '../titleComponent/titleComponent';
 
 const NewsletterSec = () => {
     return (

@@ -1,4 +1,3 @@
-import React from 'react';
 import { newBeautyProductsData } from '../../Data';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';

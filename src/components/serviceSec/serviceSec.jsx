@@ -1,6 +1,5 @@
-import React from "react"
-import { serviceData } from "../../Data"
-import ServiceSecCart from "./ServiceSecCart"
+import { serviceData } from "../../Data";
+import ServiceSecCart from "./ServiceSecCart";
 
 const ServiceSec = () => {
     return (

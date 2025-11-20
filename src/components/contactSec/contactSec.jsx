@@ -1,12 +1,11 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import clsx from "clsx"
-import { contactData } from "../../Data"
+import clsx from "clsx";
+import { Link } from "react-router-dom";
+import { contactData } from "../../Data";
 
-import TitleComponent from "../titleComponent/titleComponent"
-import SectionTitle from "../sectionTitle/sectionTitle"
-import ThemeButton from "../themeButton/themeButton"
-import FormInput from "../formInput/formInput"
+import TitleComponent from "../titleComponent/titleComponent";
+import SectionTitle from "../sectionTitle/sectionTitle";
+import ThemeButton from "../themeButton/themeButton";
+import FormInput from "../formInput/formInput";
 
 const ContactSec = () => {
     const inputStyles = "p-4 bg-greyShade rounded lg:text-base text-sm text-greyDark w-full placeholder:text-greyDark focus:outline-none"

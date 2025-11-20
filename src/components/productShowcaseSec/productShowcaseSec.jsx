@@ -1,5 +1,3 @@
-import React from 'react'
-
 import TitleComponent from '../titleComponent/titleComponent';
 import ThemeButton from '../themeButton/themeButton';
 
@@ -12,7 +10,7 @@ const ProductShowcaseSec = () => {
             <div className='flex'>
                 <div className='relative md:w-1/2'>
                     <div>
-                        <img className='w-full aspect-videoSqaure object-cover object-top' src={mokoshArgonOilBanner} alt="img" />
+                        <img className='w-full aspect-[36/31] object-cover object-top' src={mokoshArgonOilBanner} alt="img" />
                     </div>
                     <div className='absolute w-full p-5 bottom-0 left-1/2 -translate-x-1/2 -translate-y-5 text-center z-10'>
                         <h3 className='showcase_title mb-4 text-black lg:text-3xl sm:text-xl text-lg leading-[120%] tracking-[0.5px] font-Merriwheather font-semibold'>Serenity Massage Oil</h3>

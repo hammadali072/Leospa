@@ -1,8 +1,7 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
 
-import TitleComponent from '../titleComponent/titleComponent'
-import ThemeButton from '../themeButton/themeButton'
+import TitleComponent from '../titleComponent/titleComponent';
+import ThemeButton from '../themeButton/themeButton';
 
 const SkinCareProduct = ({ props }) => {
     const navigation = useNavigate();

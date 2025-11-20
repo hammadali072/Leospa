@@ -23,7 +23,7 @@ const ThemeButton = ({ children, variant = 'primary', className = '', ...props }
             variantClasses = 'text-primary hover:bg-primaryLight';
             break;
         case 'underline':
-            variantClasses = 'relative rounded-full !p-0 text-black uppercase tracking-widest after:content-[""] after:absolute after:w-full after:h-px after:scale-x-100 after:bg-black after:bottom-0 after:origin-center after:left-0 hover:after:scale-x-0 after:duration-300';
+            variantClasses = 'relative rounded-full !p-0 text-black uppercase tracking-widest duration-300 after:content-[""] after:absolute after:w-full after:h-px after:scale-x-100 after:bg-black after:bottom-0 after:origin-center after:left-0 after:duration-300 hover:after:bg-primary hover:after:scale-x-0 hover:text-primary';
             break;
         default:
             variantClasses = 'bg-gray-300 text-black';

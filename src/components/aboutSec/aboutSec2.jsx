@@ -1,10 +1,9 @@
-import React from 'react';
 import ThemeButton from '../themeButton/themeButton';
+import SectionTitle from '../sectionTitle/sectionTitle';
 import TitleComponent from '../titleComponent/titleComponent';
 
 import ChinaRose from '../../assets/china-rose.webp';
 import Jasmine from '../../assets/jasmine.webp';
-import SectionTitle from '../sectionTitle/sectionTitle';
 
 const AboutSec2 = () => {
     return (

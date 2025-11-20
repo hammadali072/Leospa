@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { User, CalendarCheck } from 'phosphor-react';
 
@@ -7,7 +6,7 @@ import TitleComponent from '../titleComponent/titleComponent';
 
 const BlogCard = ({ data }) => {
     return (
-        <div className='relative rounded-2xl overflow-hidden group bg-white shadow-lg hover:shadow-xl transition-all duration-500 hover:-translate-y-2'>
+        <div className='blog-card relative rounded-2xl overflow-hidden bg-white shadow-lg border-2 border-grey100/50 duration-500 group hover:border-primary/50 hover:shadow-xl hover:-translate-y-2'>
             <Link to='/' className='relative block overflow-hidden before:absolute before:w-[150%] before:h-[150%] before:z-10 before:inset-0 before:-rotate-45 before:bg-gradient-to-t before:from-primary/50 before:to-transparent before:scale-x-0 before:duration-500 group-hover:before:scale-x-100'>
                 <img
                     className='w-full h-auto aspect-[16/10] object-cover duration-700 group-hover:scale-110'
@@ -40,8 +39,6 @@ const BlogCard = ({ data }) => {
                     <ThemeButton variant='underline'>Read More</ThemeButton>
                 </div>
             </div>
-
-            <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary/20 rounded-2xl transition-all duration-500 pointer-events-none"></div>
         </div>
     )
 }

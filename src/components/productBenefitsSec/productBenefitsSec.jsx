@@ -1,6 +1,5 @@
-import React from 'react'
-import { productBenefitsData } from '../../Data'
-import ProductBenefit from './productBenefit'
+import { productBenefitsData } from '../../Data';
+import ProductBenefit from './productBenefit';
 
 const ProductBenefitsSec = () => {
     return (

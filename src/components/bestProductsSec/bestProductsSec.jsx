@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { CaretLeft, CaretRight } from 'phosphor-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';

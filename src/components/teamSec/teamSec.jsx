@@ -1,8 +1,7 @@
-import React from 'react'
-import { teamData } from "../../Data"
-import TitleComponent from "../titleComponent/titleComponent"
-import SectionTitle from '../sectionTitle/sectionTitle'
-import TeamCart from "./teamCart"
+import { teamData } from "../../Data";
+import TitleComponent from "../titleComponent/titleComponent";
+import SectionTitle from '../sectionTitle/sectionTitle';
+import TeamCart from "./teamCart";
 
 const TeamSec = () => {
     return (
