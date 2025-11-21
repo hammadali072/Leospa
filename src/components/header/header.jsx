@@ -77,7 +77,7 @@ const Header = () => {
                         <li className="relative group" key={index}>
                             <Link
                                 className={clsx(
-                                    "relative text-base font-semibold duration-300",
+                                    "relative text-base font-normal duration-300",
                                     "after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:duration-300",
                                     location.pathname === item.to ? "text-primary after:w-full" : "text-textColor hover:after:w-full"
                                 )}
@@ -127,7 +127,7 @@ const Header = () => {
                                     <li key={index}>
                                         <Link
                                             className={clsx(
-                                                "relative lg:text-base text-sm font-semibold duration-300",
+                                                "relative lg:text-base text-sm font-normal duration-300",
                                                 "after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:duration-300",
                                                 textColor(item),
                                                 location.pathname === item.to ? "after:w-full" : "hover:after:w-full"
