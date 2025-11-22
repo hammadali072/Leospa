@@ -1,6 +1,6 @@
-import ThemeInput from '../themeInput/themeInput';
 import SectionTitle from '../sectionTitle/sectionTitle';
 import TitleComponent from '../titleComponent/titleComponent';
+import ThemeInput from '../themeInput/themeInput';
 
 const NewsletterSec = () => {
     return (

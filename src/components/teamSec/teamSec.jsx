@@ -1,6 +1,7 @@
 import { teamData } from "../../Data";
-import TitleComponent from "../titleComponent/titleComponent";
+
 import SectionTitle from '../sectionTitle/sectionTitle';
+import TitleComponent from "../titleComponent/titleComponent";
 import TeamCart from "./teamCart";
 
 const TeamSec = () => {

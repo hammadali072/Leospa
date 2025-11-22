@@ -1,7 +1,8 @@
-import { blogData } from "../../Data"
-import TitleComponent from "../titleComponent/titleComponent"
-import SectionTitle from '../sectionTitle/sectionTitle'
-import BlogCard from './blogCard'
+import { blogData } from "../../Data";
+
+import SectionTitle from '../sectionTitle/sectionTitle';
+import TitleComponent from "../titleComponent/titleComponent";
+import BlogCard from './blogCard';
 
 const BlogSec = () => {
     return (

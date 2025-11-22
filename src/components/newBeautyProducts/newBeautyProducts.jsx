@@ -1,6 +1,6 @@
-import { newBeautyProductsData } from '../../Data';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
+import { newBeautyProductsData } from '../../Data';
 
 import SectionTitle from '../sectionTitle/sectionTitle';
 import BeautyProduct from './beautyProduct';

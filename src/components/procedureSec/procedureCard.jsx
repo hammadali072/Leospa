@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import ThemeButton from '../themeButton/themeButton';
 import TitleComponent from '../titleComponent/titleComponent';
+import ThemeButton from '../themeButton/themeButton';
 
 const ProcedureCard = ({ data }) => {
     return (

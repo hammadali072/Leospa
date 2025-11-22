@@ -2,8 +2,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Check, Leaf, Heart, Users } from 'phosphor-react';
 
-import TitleComponent from '../titleComponent/titleComponent';
 import SectionTitle from '../sectionTitle/sectionTitle';
+import TitleComponent from '../titleComponent/titleComponent';
 import ThemeButton from '../themeButton/themeButton';
 
 import AboutImage1 from '../../assets/about-img1.webp';

@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { User, CalendarCheck } from 'phosphor-react';
 
-import ThemeButton from '../themeButton/themeButton';
 import TitleComponent from '../titleComponent/titleComponent';
+import ThemeButton from '../themeButton/themeButton';
 
 const BlogCard = ({ data }) => {
     return (

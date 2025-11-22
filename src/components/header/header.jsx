@@ -18,7 +18,6 @@ const Header = () => {
     const toggleMenu = () => setMenuOpen((prev) => !prev);
     const logoRef = useRef(null)
 
-
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 500) {

@@ -1,5 +1,5 @@
-import TitleComponent from '../titleComponent/titleComponent';
 import SectionTitle from '../sectionTitle/sectionTitle';
+import TitleComponent from '../titleComponent/titleComponent';
 import ThemeButton from '../themeButton/themeButton';
 import FormInput2 from '../formInput/formInput2';
 

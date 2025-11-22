@@ -1,4 +1,5 @@
 import { productBenefitsData } from '../../Data';
+
 import ProductBenefit from './productBenefit';
 
 const ProductBenefitsSec = () => {

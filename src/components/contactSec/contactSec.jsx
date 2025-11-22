@@ -2,8 +2,8 @@ import clsx from "clsx";
 import { Link } from "react-router-dom";
 import { contactData } from "../../Data";
 
-import TitleComponent from "../titleComponent/titleComponent";
 import SectionTitle from "../sectionTitle/sectionTitle";
+import TitleComponent from "../titleComponent/titleComponent";
 import ThemeButton from "../themeButton/themeButton";
 import FormInput from "../formInput/formInput";
 

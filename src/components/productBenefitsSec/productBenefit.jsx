@@ -1,4 +1,4 @@
-import TitleComponent from '../titleComponent/titleComponent'
+import TitleComponent from '../titleComponent/titleComponent';
 
 const ProductBenefit = ({ props }) => {
     return (
